@@ -268,10 +268,22 @@ para recórrelo y mostrar dichos valores con la función console.log*/
 /*5.- Crear una función que reciba como parámetro un string y que devuelva ese mismo
 string con la primera letra convertida a mayúscula.*/
 
+    function primeraMayuscula( a ) {
+        
+        return a.substring(0,1).toUpperCase() + 
+        a.substring(1);
+
+    }
+
+    var cadena = prompt("Ingrese auna palabra o frase")
+
+    console.log('La cadena ingresada: "'+ cadena 
+    + '" , con el primer caracter convertido a mayúsculas, se leerá: ' + primeraMayuscula(cadena));
 
 
 
 
+    
 /*>>>>>>>>>>>>>>>>>>>>>>  EJERCICIO 6  <<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*6.- Crear una función que reciba como parámetro un string y que devuelva ese mismo
