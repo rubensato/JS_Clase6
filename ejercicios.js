@@ -55,7 +55,7 @@ alert se muestren de forma correcta.*/
 
     if( num1 <= num2 ) {
         alert("num1 no es mayor que num2");
-        console.log('1.a)  num1 es: ' + num1 + ', y num2 es: ' + num2 + 
+        console.log('1.a) num1 es: ' + num1 + ', y num2 es: ' + num2 + 
         ', num1 no es mayor que num2');
     }
 
@@ -66,7 +66,7 @@ alert se muestren de forma correcta.*/
 
     if( num1 < 0 || num1 != 0 ) {
         alert("num1 es negativo o distinto de cero");
-        console.log('1.c)  num1 es: ' + num1 + ', num1 es negativo o distinto de cero');
+        console.log('1.c) num1 es: ' + num1 + ', num1 es negativo o distinto de cero');
     }
 
     //cambio el valor de num1 para que se muestre el alerta
@@ -88,10 +88,10 @@ para recórrelo y mostrar dichos valores con la función console.log*/
 
     var frutas = ["uva", "manzana", "banana", "pera", "frutilla"];
         
-    console.log('2) los elementos del array son: ' + frutas);
+    console.log('2) Los elementos del array son: ' + frutas);
 
     for (var i = 0; i < frutas.length; i++) {
-        console.log('2) La fruta en el orden ' + i + ' es: ' + frutas[i]);
+        console.log('La fruta en el orden ' + i + ' del array frutas es: ' + frutas[i]);
     }
 
 
@@ -103,25 +103,107 @@ para recórrelo y mostrar dichos valores con la función console.log*/
 
 /*    a.- Ordenar el array alfabéticamente y mostrar el resultado (método sort).*/
 
+    var frutas = ["uva", "manzana", "banana", "pera", "frutilla"];
+            
+    //muestro los elementos del array
+    console.log('3.a) Los elementos del array son: ' + frutas);
+        
+    //ordeno los elementos del array
+    frutas.sort();
+        
+    //muestro los elementos ordenados del array
+    console.log('Los elementos del array frutas son: ' + frutas);
+
+
 
 /*    b.- Agregar un elemento al final y al principio del arreglo (métodos push y
         unshift).*/
-    
+
+    var frutas = ["uva", "manzana", "banana", "pera", "frutilla"];
+        
+    //muestro los elementos del array
+    console.log('3.b) Los elementos del array son: ' + frutas);
+        
+    //Agrego un elemento al final del array
+    frutas.push("ananá");
+        
+    //Quito un elemento al principio del array
+    frutas.unshift("maracuyá");
+
+    //muestro los elementos ordenados del array
+    console.log('Los elementos del array frutas, agregando al principio y al final, son: ' + frutas);
+
+        
     
 /*    c.- Eliminar un elemento al final y al principio del arreglo (métodos pop y
         shift).*/
     
+    var frutas = ["uva", "manzana", "banana", "pera", "frutilla"];
+    
+    //muestro los elementos del array
+    console.log('3.c) Los elementos del array son: ' + frutas);
+        
+    //Quito un elemento al final del array
+    frutas.pop();
+        
+    //Quito un elemento al principio del array
+    frutas.shift();
+
+    //muestro los elementos ordenados del array
+    console.log('Los elementos del array frutas, sin el primero y el último, son: ' + frutas);
+
+        
     
 /*    d.- Invertir el orden de los elementos en el array (método reverse).*/
+
+    var frutas = ["uva", "manzana", "banana", "pera", "frutilla"];
+                
+    //muestro los elementos del array
+    console.log('3.d) Los elementos del array son: ' + frutas);
+        
+    //Invierto el orden de los elementos del array
+    frutas.reverse();
+        
+    //muestro los elementos ordenados del array
+    console.log('Los elementos del array frutas, inviertiendo su orden, son: ' + frutas);
+
 
 
 /*    e.- Recorrer el array utilizando el bucle while (usar la propiedad length del array
         en la condición) y guardar los valores en una variable del tipo string
         concatenandolos. Mostrar el valor de la variable al final.*/
 
+    var frutas = ["uva", "manzana", "banana", "pera", "frutilla"];
+    
+    console.log('3.e) Los elementos del array son: ' + frutas);
+
+    var i = 0;
+    var cadenaFrutas = "";
+    
+    while (i < frutas.length) {
+        cadenaFrutas += frutas[i];
+        i ++;
+    }
+
+    console.log('El contenido de la variable cadenaFrutas es: ' + cadenaFrutas);
+
+
 
 /*    f.- Recorrer el array utilizando el bucle for y mostrar cada uno de los valores
         convirtiéndolos a mayúsculas (método toUpperCase de la clase String).*/
+
+        var frutas = ["uva", "manzana", "banana", "pera", "frutilla"];
+        
+        console.log('3.f) Los elementos del array son: ' + frutas);
+        
+        console.log('Convirtiendo todos los valores en mayúsculas, obtenemos:');
+        
+        for (var i = 0; i < frutas.length; i++) {
+            console.log('La fruta en el orden ' + i + ' del array frutas es: ' + frutas[i].toUpperCase());
+        }
+    
+    
+
 
 
 
