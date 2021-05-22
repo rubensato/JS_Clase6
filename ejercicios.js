@@ -331,6 +331,66 @@ string con la primera letra DE CADA PALABRA convertida a mayúscula.*/
 /*7.- Crear una función que reciba como parámetro un string y que devuelva la cantidad
 de vocales que posee.*/
 
+    function cantidadAparece( cadena1, caracter1 ) {
+            
+        //Creo una variable contador de las veces que aparece el caracter en la cadena
+        n = 0;
+      
+        for (var i = 0; i < cadena1.length; i++) {
+            
+            //Comparo cada caracter con el caracter buscado 
+            if ( cadena1[i] === caracter1 || cadena1[i].toLowerCase === caracter1 || cadena1[i] === caracter1.toLowerCase ) {
+                ++n;
+            }
+
+        }
+
+        return n;
+
+    }
+
+    var cadena = prompt("Ingrese auna palabra o frase")
+
+    console.log('7) La variable "cadena" contiene: ' + cadena);
+
+    //Creo una variable de cantidad total de vocales
+    var totalVocales = 0;
+
+    //Creo una variable para recibir la cantidad de vocales en cada ocacion
+    var cantidadVeces = 0;
+
+    //Cantidad de veces que aparece la letra "a" 
+    cantidadVeces = cantidadAparece( cadena, "a" );
+    console.log('La cantidad de veces que aparece la vocal "a" es: ' + cantidadVeces);
+    totalVocales += cantidadVeces;
+    
+    //Cantidad de veces que aparece la letra "e" 
+    cantidadVeces = cantidadAparece( cadena, "e" );
+    console.log('La cantidad de veces que aparece la vocal "a" es: ' + cantidadVeces);
+    totalVocales += cantidadVeces;
+    
+    //Cantidad de veces que aparece la letra "i" 
+    cantidadVeces = cantidadAparece( cadena, "i" );
+    console.log('La cantidad de veces que aparece la vocal "a" es: ' + cantidadVeces);
+    totalVocales += cantidadVeces;
+    
+    //Cantidad de veces que aparece la letra "o" 
+    cantidadVeces = cantidadAparece( cadena, "o" );
+    console.log('La cantidad de veces que aparece la vocal "a" es: ' + cantidadVeces);
+    totalVocales += cantidadVeces;
+    
+    //Cantidad de veces que aparece la letra "u" 
+    cantidadVeces = cantidadAparece( cadena, "u" );
+    console.log('La cantidad de veces que aparece la vocal "a" es: ' + cantidadVeces);
+    totalVocales += cantidadVeces;
+    
+    
+    //Muestro al final el total de vocales en la cadena ingresada
+    console.log('La cadena ingresada: "'+ cadena + '" , contiene un total de vocales de: ' 
+    + totalVocales);
+
+
+
 
 
 
