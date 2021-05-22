@@ -53,20 +53,29 @@ alert se muestren de forma correcta.*/
     var num1 = 5;
     var num2 = 8;
 
-    if(...) {
+    if( num1 <= num2 ) {
         alert("num1 no es mayor que num2");
+        console.log('1.a)  num1 es: ' + num1 + ', y num2 es: ' + num2 + 
+        ', num1 no es mayor que num2');
     }
 
-    if(...) {
+    if( num2 >= 0 ) {
         alert("num2 es positivo");
+        console.log('1.b) num2 es: ' + num2 + ', num2 es positivo');
     }
 
-    if(...) {
+    if( num1 < 0 || num1 != 0 ) {
         alert("num1 es negativo o distinto de cero");
+        console.log('1.c)  num1 es: ' + num1 + ', num1 es negativo o distinto de cero');
     }
 
-    if(...) {
+    //cambio el valor de num1 para que se muestre el alerta
+    num1 = 7.18;
+
+    if( ( num1 + 1 ) > num2 ) {
         alert("Incrementar en 1 unidad el valor de num1 lo hace mayor que num2");
+        console.log('1.d) num1 es: ' + num1 + ', y num2 es: ' + num2 + 
+        '. Incrementar en 1 unidad el valor de num1 lo hace mayor que num2');
     }
 
 
