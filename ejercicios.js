@@ -192,15 +192,15 @@ para recórrelo y mostrar dichos valores con la función console.log*/
 /*    f.- Recorrer el array utilizando el bucle for y mostrar cada uno de los valores
         convirtiéndolos a mayúsculas (método toUpperCase de la clase String).*/
 
-        var frutas = ["uva", "manzana", "banana", "pera", "frutilla"];
-        
-        console.log('3.f) Los elementos del array son: ' + frutas);
-        
-        console.log('Convirtiendo todos los valores en mayúsculas, obtenemos:');
-        
-        for (var i = 0; i < frutas.length; i++) {
-            console.log('La fruta en el orden ' + i + ' del array frutas es: ' + frutas[i].toUpperCase());
-        }
+    var frutas = ["uva", "manzana", "banana", "pera", "frutilla"];
+    
+    console.log('3.f) Los elementos del array son: ' + frutas);
+    
+    console.log('Convirtiendo todos los valores en mayúsculas, obtenemos:');
+    
+    for (var i = 0; i < frutas.length; i++) {
+        console.log('La fruta en el orden ' + i + ' del array frutas es: ' + frutas[i].toUpperCase());
+    }
     
     
 
@@ -214,18 +214,52 @@ para recórrelo y mostrar dichos valores con la función console.log*/
 /*4.- Crear una variable que contenga el valor 'La Manzana es Verde' y utilizarlo para:*/
 
 /*    a.- Convertirlo a minúscula y mostrar el resultado (método toLowerCase).*/
+    
+    var oracion = 'La Manzana es Verde';
+
+    console.log('4.a) La variable "oracion" contiene: ' + oracion);
+    
+    console.log('La variable "oracion" convertida a minúsculas contiene: ' + oracion.toLowerCase());
+
 
 
 /*    b.- Obtener los últimos 4 caracteres del string (método substring).*/
+    
+    var oracion = 'La Manzana es Verde';
+
+    console.log('4.b) La variable "oracion" contiene: ' + oracion);
+
+    console.log('Los últimos 4 caracteres de la variable "oracion" sone: ' 
+    + oracion.substring(oracion.length - 4));
+
 
 
 /*    c.- Obtener los caracteres 3, 4 y 5 del string (método substring).*/
+    
+    var oracion = 'La Manzana es Verde';
+
+    console.log('4.c) La variable "oracion" contiene: ' + oracion);
+    
+    for (var i = 3; i <= 5; i++) {
+        console.log('El caracter de orden' + i + ' es: "' + oracion.substring( i, i+1) + '"');
+    }
+
 
 
 /*    d.- Obtener un array con las palabras que hay en el string, asumiendo que cada
         palabra termina cuando se encuentra el carácter espacio (método split).*/
+    
+    var oracion = 'La Manzana es Verde';
 
+    console.log('4.d) La variable "oracion" contiene: ' + oracion);
 
+    //Convierto la oracion en un array, tomando el espacio en blanco como separador
+    var  oracionPalabras = oracion.split(" ");
+
+    console.log('El contenido del array oracionPalabras es: ' + oracionPalabras);
+    
+    
+    
 
 
 
