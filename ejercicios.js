@@ -86,6 +86,14 @@ alert se muestren de forma correcta.*/
 /*2.- Crear un Array que contenga al menos 3 nombres de frutas y utilizar el bucle for in
 para recórrelo y mostrar dichos valores con la función console.log*/
 
+    var frutas = ["uva", "manzana", "banana", "pera", "frutilla"];
+        
+    console.log('2) los elementos del array son: ' + frutas);
+
+    for (var i = 0; i < frutas.length; i++) {
+        console.log('2) La fruta en el orden ' + i + ' es: ' + frutas[i]);
+    }
+
 
 
 
