@@ -406,7 +406,19 @@ miArray al final del script.*/
     }
     var miNumero = 15;
     var miArray = ['Un texto', true, 4, 5];
+
+    //Muestro valores iniciales
+    console.log('8) Al comenzar, la variable "miNumero" tiene el valor: ' + miNumero + 
+    ', y la variable "miArray tiene el valor: ' + miArray);
+
+
     miFuncion(miNumero, miArray);
+
+
+    //Muestro valores finales
+    console.log('Al terminar, la variable "miNumero" tiene el valor: ' + miNumero + 
+    ', y la variable "miArray tiene el valor: ' + miArray);
+
 
 
 
