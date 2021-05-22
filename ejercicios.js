@@ -277,17 +277,49 @@ string con la primera letra convertida a mayúscula.*/
 
     var cadena = prompt("Ingrese auna palabra o frase")
 
+    console.log('5) La variable "cadena" contiene: ' + cadena);
+
     console.log('La cadena ingresada: "'+ cadena 
     + '" , con el primer caracter convertido a mayúsculas, se leerá: ' + primeraMayuscula(cadena));
 
-
-
-
     
+
+
+
+
 /*>>>>>>>>>>>>>>>>>>>>>>  EJERCICIO 6  <<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*6.- Crear una función que reciba como parámetro un string y que devuelva ese mismo
 string con la primera letra DE CADA PALABRA convertida a mayúscula.*/
+
+    function primeraMayuscula1( a ) {
+        
+        return a.substring(0,1).toUpperCase() + 
+        a.substring(1);
+
+    }
+
+    var cadena = prompt("Ingrese auna palabra o frase")
+
+    console.log('6) La variable "cadena" contiene: ' + cadena);
+    
+    //Convierto la oracion en un array, tomando el espacio en blanco como separador
+    var  oracionPalabras = cadena.split(" ");
+    
+    for (var i = 0; i < oracionPalabras.length; i++) {
+        
+        //Convierto la primer letra de cada palabra en mayúsculas 
+        oracionPalabras[i] = primeraMayuscula1(oracionPalabras[i]);
+
+    }
+
+    //Convierto el array en oracion, poniendo un espacio en blanco como separador
+    var  cadena2 = oracionPalabras.join(" ");
+
+    console.log('La cadena ingresada: "'+ cadena 
+    + '" , con los primeros caracteres de cada palabra en mayúsculas, se leerá: ' 
+    + cadena2);
+
 
 
 
